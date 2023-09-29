@@ -1,0 +1,64 @@
+steps:
+  REGION-d4755aac-32b6-4c89-9682-9efc09e4f6cb:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: LAB1
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1c7b1773-8f9c-4f71-b560-e0c2510f9ca3
+              stepCounter: d4755aac-32b6-4c89-9682-9efc09e4f6cb
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 72706c67-dc40-4f02-8814-6378bac90ce3
+              stepCounter: d4755aac-32b6-4c89-9682-9efc09e4f6cb
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 32375551-62ca-495e-9813-409a8c9cd227
+              stepCounter: d4755aac-32b6-4c89-9682-9efc09e4f6cb
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('LAB1', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: d4755aac-32b6-4c89-9682-9efc09e4f6cb

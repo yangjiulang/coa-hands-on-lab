@@ -1,0 +1,124 @@
+steps:
+  SUPPLIER-8be0569c-be9d-42dc-ada5-ffaa4842a151:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: LAB1
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 463722d1-5116-43e9-8cbd-f9bfc131dd28
+              stepCounter: 8be0569c-be9d-42dc-ada5-ffaa4842a151
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: S_SUPPKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4f2ea79c-2f17-4113-9605-ab6d09ca3fd9
+              stepCounter: 8be0569c-be9d-42dc-ada5-ffaa4842a151
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: S_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 539baa05-b185-4e60-b1da-fa9a57a61ce0
+              stepCounter: 8be0569c-be9d-42dc-ada5-ffaa4842a151
+            config: {}
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: S_ADDRESS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3ae743db-5e75-4cdf-be26-d1bceb268676
+              stepCounter: 8be0569c-be9d-42dc-ada5-ffaa4842a151
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: S_NATIONKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 73bf4331-77e3-4844-9351-64780ecd79ff
+              stepCounter: 8be0569c-be9d-42dc-ada5-ffaa4842a151
+            config: {}
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: S_PHONE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 93fe5c7c-132c-455e-a920-011229162167
+              stepCounter: 8be0569c-be9d-42dc-ada5-ffaa4842a151
+            config: {}
+            dataType: NUMBER(12,2)
+            defaultValue: ""
+            description: ""
+            name: S_ACCTBAL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a41de081-16fd-4a43-ab55-03c704fb4d02
+              stepCounter: 8be0569c-be9d-42dc-ada5-ffaa4842a151
+            config: {}
+            dataType: VARCHAR(101)
+            defaultValue: ""
+            description: ""
+            name: S_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('LAB1', 'SUPPLIER') }}
+      name: SUPPLIER
+      schema: ""
+      sqlType: Source
+      table: SUPPLIER
+      type: sourceInput
+    stepCounter: 8be0569c-be9d-42dc-ada5-ffaa4842a151
